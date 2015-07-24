@@ -75,6 +75,7 @@ $navbar-profile-border-width: 2px;
   .navbar-brand:hover {
     outline: none;
     color: $navbar-color;
+    line-height: 50px;
     padding-top: $navbar-vertical-padding;
     padding-bottom: $navbar-vertical-padding;
   }
