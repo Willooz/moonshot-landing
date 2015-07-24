@@ -4,6 +4,7 @@ ruby "2.2.2"
 
 gem "rails", "4.2.3"
 gem "pg"
+gem "slim"
 gem "figaro"
 gem "simple_form"
 gem "country_select"
