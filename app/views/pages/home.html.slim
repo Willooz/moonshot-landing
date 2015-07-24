@@ -4,30 +4,53 @@
 = content_for(:description) do
   Moonshot
 
-section id="#mission"
-  h1 Mission
+div id="mission"
+  section
+    h1 Moonshot
 
-  h2 This is the homepage
+    h3
+      i> class="fa fa-quote-left"
+      span class="quote" I do my best work when I am in pain and turmoil.
+      br
+      | - Sting
+      br
+      | Unfortunately, most people aren’t Sting. It’s high time work culture got the call.
 
-  p Find me in
-      code app/views/pages/home.html.erb
+    p We want to increase work satisfaction and productivity for the companies of tomorrow and their employees.
 
-  p Thanks to the
-    a href="https://github.com/thoughtbot/high_voltage" high_voltage
-    | gem, if you need more static pages, just create a file in the <code>app/views/pages</code> folder, the route will be automatically available without you adding any controller or touching the <code>config/routes.rb</code> file
+    p Currently an early-stage startup, we’re looking to get in touch with people working for companies with a progressive approach to management & organization.
 
-section id="#about-us"
-  h1 About us
-  ul class="list-inline"
-    li
-      = image_tag "http://lorempixel.com/150/150/", class: "img-circle"
-      h2 Nicolas
-      p Description
-    li
-      = image_tag "http://lorempixel.com/150/150/", class: "img-circle"
-      h2 Willem
-      p Description
+div id="about-us"
+  section
+    h2 About us
+    ul class="list-inline"
+      li
+        div class="pic"
+          = image_tag "http://lorempixel.com/100/100/", class: "img-circle"
+        div class="name"
+          h4 Nicolas
+          p Description
+      li
+        div class="pic"
+          = image_tag "http://lorempixel.com/100/100/", class: "img-circle"
+        div class="name"
+          h4 Willem
+          p Description
 
-section id="#contact-us"
-  h1 Contact us
+    p Half a Viking, half a Yankee and a full Frenchman between the both of us, we used to work in different corporate groups until we got enough of the old ways.
+
+    p We're starting Moonshot to build the future of the work place.
+
+div id="contact-us"
+  section
+    h2 Let's meet
+    p If you're a CEO/CTO/head of HR at a 50+ employee company based in New York, let's schedule a 30 minute interview in the city. We want to understand what you do. <strong>Drinks are on us!</strong>
+    form class="form-inline"
+      div class="form-group"
+        label for="exampleInputName2" Your date
+        input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe"
+      div class="form-group"
+        label for="exampleInputEmail2" Your contact
+        input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email or Phone"
+      button type="submit" class="btn btn-primary" Go!
 

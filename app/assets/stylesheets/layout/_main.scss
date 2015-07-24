@@ -1,0 +1,86 @@
+// Reset main blocks
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, ol, ul, li, figure {
+  margin: 0px;
+  padding: 0px;
+}
+
+// Style page base
+body {
+  font-family: $base-font;
+  font-weight: 200;
+  font-size: $base-size;
+  letter-spacing: $letter-spacing;
+  line-height: $base-height;
+  color: $gray-darker;
+  background: white;
+}
+
+main {}
+
+nav {}
+
+section {
+  max-width: 900px;
+  margin: 0px auto;
+  padding-top:$vertical-spacing;
+  padding-bottom:$vertical-spacing;
+  padding-left: $side-whitespace;
+  padding-right: $side-whitespace;
+  border-top: solid 1px $gray-lighter;
+  // text-align: left;
+}
+
+#contact-us {
+  min-height: 400px;
+  background: image-url("nyc_midtown.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+// Set `margin-bottom` to maintain vertical rhythm
+h1, h2, h3 {
+  margin-bottom: $vertical-spacing;
+}
+
+h4, p {
+  margin-bottom: $vertical-spacing / 3;
+}
+
+ul.list-inline > li {
+  padding-right: $vertical-spacing * 2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header-font;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 60px;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 28px;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.quote {
+  font-style: italic;
+  font-family: "Georgia";
+  font-size: 28px;
+  line-height: 2;
+}
+
+.pic {
+  float: left;
+}
+
+.name {
+  margin: 40px 0px $vertical-spacing 120px;
+}
