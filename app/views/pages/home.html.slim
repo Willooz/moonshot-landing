@@ -4,16 +4,30 @@
 = content_for(:description) do
   Moonshot
 
-div class="container"
-  div class="row"
-    div class="col-xs-12 col-sm-8 col-sm-offset-2"
-      h1 Welcome!
+section id="#mission"
+  h1 Mission
 
-      h2 This is the homepage
+  h2 This is the homepage
 
-      p Find me in
-          code app/views/pages/home.html.erb
+  p Find me in
+      code app/views/pages/home.html.erb
 
-      p Thanks to the
-        a href="https://github.com/thoughtbot/high_voltage" high_voltage
-        | gem, if you need more static pages, just create a file in the <code>app/views/pages</code> folder, the route will be automatically available without you adding any controller or touching the <code>config/routes.rb</code> file
+  p Thanks to the
+    a href="https://github.com/thoughtbot/high_voltage" high_voltage
+    | gem, if you need more static pages, just create a file in the <code>app/views/pages</code> folder, the route will be automatically available without you adding any controller or touching the <code>config/routes.rb</code> file
+
+section id="#about-us"
+  h1 About us
+  ul class="list-inline"
+    li
+      = image_tag "http://lorempixel.com/150/150/", class: "img-circle"
+      h2 Nicolas
+      p Description
+    li
+      = image_tag "http://lorempixel.com/150/150/", class: "img-circle"
+      h2 Willem
+      p Description
+
+section id="#contact-us"
+  h1 Contact us
+
