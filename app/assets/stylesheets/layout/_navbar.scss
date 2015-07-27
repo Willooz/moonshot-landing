@@ -1,8 +1,8 @@
 /* -------------------------------------
  * Colors & Fonts
  * ------------------------------------- */
-$navbar-color: $gray-light;
-$navbar-hover-color: $yellow;
+$navbar-color: #00143B;
+$navbar-hover-color: $red;
 $navbar-font-family: $navbar-font;
 $navbar-font-size: 14px;
 $navbar-text-transform: capitalize;
@@ -40,12 +40,14 @@ $navbar-profile-border-width: 2px;
  * SCSS code
  * ------------------------------------- */
 
-.navbar {
-  margin: 0px;
-}
+// .navbar {
+//   margin: 0px;
+// }
 
 .navbar-wagon {
-  background: $navbar-bg;
+  max-width: 900px;
+  margin: 0px auto;
+  // background: $navbar-bg;
   font-family: $navbar-font-family;
   border: none;
   font-size: $navbar-font-size;
@@ -54,7 +56,7 @@ $navbar-profile-border-width: 2px;
   letter-spacing: $navbar-letter-spacing;
   padding-left: $navbar-horizontal-padding;
   padding-right: $navbar-horizontal-padding;
-  border-bottom: $navbar-border-bottom-width solid $navbar-border-bottom-color;
+  // border-bottom: $navbar-border-bottom-width solid $navbar-border-bottom-color;
   min-height: 0;
   transition: background 0.4s ease;
 
@@ -80,6 +82,7 @@ $navbar-profile-border-width: 2px;
   .navbar-brand:hover {
     outline: none;
     color: $navbar-color;
+    font-weight: 800;
     line-height: 50px;
     padding-top: $navbar-vertical-padding;
     padding-bottom: $navbar-vertical-padding;

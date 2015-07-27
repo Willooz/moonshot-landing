@@ -18,7 +18,7 @@ $navbar-font: 'Raleway', "sans-serif";
 // $my-font: "Font Name";
 
 // Font-size and line-height
-$base-size: 16px;
+$base-size: 18px;
 $base-height: 1.4;
 $letter-spacing: 0.5px;
 $vertical-spacing: 60px;
@@ -28,8 +28,10 @@ $side-whitespace: 15px;
  * Colors
  * ------------------------------------- */
 // Scheme
-$red: #EE5F5B;
-$blue: #469AE0;
+$red: #F02351; // #EE5F5B;
+$blue: #84A5E6; // #469AE0;
+$blue-dark: #00143B;
+$blue-light: #DCECFF;
 $yellow: #FDB631;
 $orange: #E67E22;
 $green: #32B796;

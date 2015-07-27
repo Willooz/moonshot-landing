@@ -18,9 +18,17 @@ $brand-danger:    $red;
 $brand-warning:   $orange;
 
 // General radius (for buttons, inputs, popover...)
-$border-radius-base:  2px;
-$border-radius-large: 2px;
-$border-radius-small: 2px;
+$border-radius-base:  999em;
+$border-radius-large: 999em;
+$border-radius-small: 999em;
+
+// Buttons
+$btn-primary-bg: $brand-danger;
+$btn-primary-border: $btn-primary-bg;
+
+$padding-large-horizontal: 22px;
+$font-size-large: 20px;
+
 
 // Links style
 $link-hover-decoration: none;
