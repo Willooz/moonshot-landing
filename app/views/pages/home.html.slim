@@ -1,67 +1,63 @@
 = content_for(:title) do
-  Moonshot Home
-
-= content_for(:description) do
   Moonshot
 
-div id="mission"
-  section
-    / h1 Moonshot
+= content_for(:description) do
+  Home
 
-    div class="pic"
-      i class="fa fa-quote-left"
-    div class="quote"
-      p
-        span> class="quote-text" I do my best work when I am in pain and turmoil.
-        | - Sting
-      h3 Unfortunately, most people aren’t Sting.
-      h3 It’s high time work culture got the call.
-      h3 We're here to change things!
+section id="intro"
+  div class="pic"
+    i class="fa fa-quote-left"
+  div class="quote"
+    p
+      span> class="quote-text" I do my best work when I am in pain and turmoil.
+      | - Sting
+    h3 Unfortunately, most people aren’t Sting.
+    h3 It’s high time work culture got the call.
+    h3 We're here to change things!
 
-    h2 Our Mission
+section id="mission"
+  h2 Our Mission
 
-    p We want to increase work satisfaction and productivity for the companies of tomorrow and their employees.
+  p We want to increase work satisfaction and productivity for the companies of tomorrow and their employees.
 
-    p Currently an early-stage startup, we’re looking to get in touch with people working for companies with a progressive approach to management & organization.
+  p Currently an early-stage startup, we’re looking to get in touch with people working for companies with a progressive approach to management and organization.
 
-    = link_to "Let's meet", "#contact-us", class: "btn btn-lg btn-primary call-for-action"
+  = link_to "Let's meet", "#contact-us", class: "btn btn-lg btn-primary call-for-action"
 
-div id="about-us"
-  section
-    h2 About us
-    ul class="list-inline"
-      li
-        div class="pic"
-          = image_tag "http://lorempixel.com/100/100/", class: "img-circle"
-        div class="name"
-          h4 Nicolas
-          p Description
-      li
-        div class="pic"
-          = image_tag "http://lorempixel.com/100/100/", class: "img-circle"
-        div class="name"
-          h4 Willem
-          p Description
+section id="about-us"
+  h2 About us
+  ul class="list-inline"
+    li
+      div class="pic"
+        = image_tag "nico.jpg", size: "100", class: "img-circle"
+      div class="name"
+        h4 Nicolas
+        p Chief <br> 😎
+    li
+      div class="pic"
+        = image_tag "willem.jpg", size: "100", class: "img-circle"
+      div class="name"
+        h4 Willem
+        p Chief Yolo <br> 😇 🍪 🍻 🎨 🚁 🇺🇸 🇫🇷
 
-    p Half a Viking, half a Yankee and a full Frenchman between the both of us, we used to work in different corporate groups until we got enough of the old ways.
+  p Half a Viking, half a Yankee and a full Frenchman between the both of us, we used to work in different corporate groups until we got enough of the old ways.
 
-    p We're starting Moonshot to build the future of the work place.
+  p We're starting Moonshot to build the future of the work place.
 
-div id="contact-us"
-  section
-    h2 Let's meet
-    p If you're a CEO/CTO/head of HR at a 50+ employee company based in New York, let's schedule a 30 minute interview in the city. We want to understand what you do. <strong>Drinks are on us!</strong>
+section id="contact-us"
+  h2 Let's meet!
+  p If you're a CEO/CTO/head of HR at a 50+ employee company based in New York, let's schedule a 30 minute interview in the city. We want to understand what you do. <strong>Drinks are on us! </strong> 🍺😀
 
-    form class="form-horizontal"
-      div class="form-group"
-        label for="exampleInputName2" class="col-sm-2 control-label" Date:
-        div class="col-sm-offset-1 col-sm-8"
-          input type="text" class="input-lg form-control" id="exampleInputName2" placeholder="xx/xx/2015"
-      div class="form-group"
-        label for="exampleInputEmail2" class="col-sm-2 control-label" Contact:
-        div class="col-sm-offset-1 col-sm-8"
-          input type="email" class="input-lg form-control" id="exampleInputEmail2" placeholder="Email or Phone"
-      div class="form-group"
-        div class="col-sm-offset-3 col-sm-9"
-          button type="submit" class="btn btn-lg btn-primary" Go!
+  = form_for @contact, method: :post, html: { class: "form-horizontal" } do |f|
+    div class="form-group"
+      = f.label :name, class: "col-sm-2 control-label"
+      div class="col-sm-offset-1 col-sm-8"
+        = f.text_field :name, class: "input-lg form-control", placeholder: "Name and Position"
+    div class="form-group"
+      = f.label :info, class: "col-sm-2 control-label"
+      div class="col-sm-offset-1 col-sm-8"
+        = f.text_field :info, class: "input-lg form-control", placeholder: "Email or Phone"
+    div class="form-group"
+      div class="col-sm-offset-3 col-sm-9"
+        = f.submit "Go!", class: "btn btn-lg btn-primary"
 
