@@ -23,15 +23,18 @@ nav {}
 section {
   max-width: 900px;
   margin: 0px auto;
-  padding-top:$vertical-spacing;
-  padding-bottom:$vertical-spacing;
+  padding-top: $vertical-spacing;
+  padding-bottom: $vertical-spacing;
   padding-left: $side-whitespace;
   padding-right: $side-whitespace;
-  border-top: solid 1px $blue;
-  // text-align: left;
 }
 
-#contact-us {
+#intro {
+  padding-top: $vertical-spacing * 2;
+}
+
+#intro, #about-us, #contact-us, #footer {
+  border-top: solid 1px $blue;
   // min-height: 400px;
   // background: image-url("nyc_midtown.jpg");
   // background-size: 100%;
