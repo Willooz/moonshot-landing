@@ -6,19 +6,25 @@
 
 div id="mission"
   section
-    h1 Moonshot
+    / h1 Moonshot
 
-    h3
-      i> class="fa fa-quote-left"
-      span class="quote" I do my best work when I am in pain and turmoil.
-      br
-      | - Sting
-      br
-      | Unfortunately, most people aren’t Sting. It’s high time work culture got the call.
+    div class="pic"
+      i class="fa fa-quote-left"
+    div class="quote"
+      p
+        span> class="quote-text" I do my best work when I am in pain and turmoil.
+        | - Sting
+      h3 Unfortunately, most people aren’t Sting.
+      h3 It’s high time work culture got the call.
+      h3 We're here to change things!
+
+    h2 Our Mission
 
     p We want to increase work satisfaction and productivity for the companies of tomorrow and their employees.
 
     p Currently an early-stage startup, we’re looking to get in touch with people working for companies with a progressive approach to management & organization.
+
+    = link_to "Let's meet", "#contact-us", class: "btn btn-lg btn-primary call-for-action"
 
 div id="about-us"
   section
@@ -45,12 +51,17 @@ div id="contact-us"
   section
     h2 Let's meet
     p If you're a CEO/CTO/head of HR at a 50+ employee company based in New York, let's schedule a 30 minute interview in the city. We want to understand what you do. <strong>Drinks are on us!</strong>
-    form class="form-inline"
+
+    form class="form-horizontal"
       div class="form-group"
-        label for="exampleInputName2" Your date
-        input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe"
+        label for="exampleInputName2" class="col-sm-2 control-label" Date:
+        div class="col-sm-offset-1 col-sm-8"
+          input type="text" class="input-lg form-control" id="exampleInputName2" placeholder="xx/xx/2015"
       div class="form-group"
-        label for="exampleInputEmail2" Your contact
-        input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email or Phone"
-      button type="submit" class="btn btn-primary" Go!
+        label for="exampleInputEmail2" class="col-sm-2 control-label" Contact:
+        div class="col-sm-offset-1 col-sm-8"
+          input type="email" class="input-lg form-control" id="exampleInputEmail2" placeholder="Email or Phone"
+      div class="form-group"
+        div class="col-sm-offset-3 col-sm-9"
+          button type="submit" class="btn btn-lg btn-primary" Go!
 

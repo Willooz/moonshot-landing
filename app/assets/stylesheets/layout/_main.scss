@@ -8,12 +8,12 @@ p, blockquote, ol, ul, li, figure {
 // Style page base
 body {
   font-family: $base-font;
-  font-weight: 200;
+  font-weight: 400;
   font-size: $base-size;
   letter-spacing: $letter-spacing;
   line-height: $base-height;
-  color: $gray-darker;
-  background: white;
+  color: $blue-dark;
+  background: $blue-light image-url("bg.png") no-repeat center top;
 }
 
 main {}
@@ -27,23 +27,23 @@ section {
   padding-bottom:$vertical-spacing;
   padding-left: $side-whitespace;
   padding-right: $side-whitespace;
-  border-top: solid 1px $gray-lighter;
+  border-top: solid 1px $blue;
   // text-align: left;
 }
 
 #contact-us {
-  min-height: 400px;
-  background: image-url("nyc_midtown.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
+  // min-height: 400px;
+  // background: image-url("nyc_midtown.jpg");
+  // background-size: 100%;
+  // background-repeat: no-repeat;
 }
 
 // Set `margin-bottom` to maintain vertical rhythm
-h1, h2, h3 {
+h1, h2 {
   margin-bottom: $vertical-spacing;
 }
 
-h4, p {
+h3, h4, label, p {
   margin-bottom: $vertical-spacing / 3;
 }
 
@@ -51,8 +51,21 @@ ul.list-inline > li {
   padding-right: $vertical-spacing * 2;
 }
 
+.form-horizontal {
+  margin-top: $vertical-spacing;
+  .control-label {
+    padding-top: 10px;
+  }
+}
+
+.call-for-action {
+  margin-top: $vertical-spacing / 2;
+}
+
 h1, h2, h3, h4, h5, h6 {
+  color: $blue-dark;
   font-family: $header-font;
+  line-height: $base-height;
 }
 
 h1 {
@@ -62,25 +75,31 @@ h1 {
 
 h2 {
   font-weight: 800;
-  font-size: 28px;
+  font-size: 44px;
 }
 
 h3 {
-  font-weight: 400;
-  font-size: 24px;
-}
-
-.quote {
-  font-style: italic;
-  font-family: "Georgia";
-  font-size: 28px;
-  line-height: 2;
+  font-weight: 200;
+  font-size: 20px;
 }
 
 .pic {
   float: left;
+  color: $blue;
+  font-size: 40px;
 }
 
 .name {
   margin: 40px 0px $vertical-spacing 120px;
+}
+
+.quote {
+  margin: 10px 0px $vertical-spacing 60px;
+  color: $blue;
+  .quote-text {
+    font-style: italic;
+    font-weight: 800;
+    font-family: "Georgia";
+    font-size: 26px;
+  }
 }
