@@ -33,20 +33,13 @@ section {
   padding-top: $vertical-spacing * 2;
 }
 
-#intro, #about-us, #contact-us, #footer {
-  border-top: solid 1px $blue;
-  // min-height: 400px;
-  // background: image-url("nyc_midtown.jpg");
-  // background-size: 100%;
-  // background-repeat: no-repeat;
-}
-
 // Set `margin-bottom` to maintain vertical rhythm
-h1, h2 {
-  margin-bottom: $vertical-spacing;
+h1 {}
+h2 {
+  margin-bottom: $vertical-spacing / 3 * 2;
 }
 
-h3, h4, label, p {
+h4, label, p {
   margin-bottom: $vertical-spacing / 3;
 }
 
@@ -83,7 +76,7 @@ h2 {
 
 h3 {
   font-weight: 200;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .pic {
@@ -93,12 +86,12 @@ h3 {
 }
 
 .name {
-  margin: 40px 0px $vertical-spacing 120px;
+  margin: 40px 0px $vertical-spacing/3*2 120px;
 }
 
 .quote {
-  margin: 10px 0px $vertical-spacing 60px;
-  color: $blue;
+  margin: 10px 0px 0px 60px;
+  // color: $blue;
   .quote-text {
     font-style: italic;
     font-weight: 800;

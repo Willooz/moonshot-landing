@@ -1,12 +1,13 @@
 /* -------------------------------------
  * Colors & Fonts
  * ------------------------------------- */
-$navbar-color: #00143B;
+$navbar-color: $blue-dark;
+// $navbar-default-color: $blue;
 $navbar-hover-color: $red;
 $navbar-font-family: $navbar-font;
 $navbar-font-size: 14px;
 $navbar-text-transform: capitalize;
-$navbar-font-weight: 300;
+$navbar-font-weight: 600;
 $navbar-letter-spacing: 1.5px;
 $navbar-font-family: $navbar-font;
 $navbar-bg: white;
@@ -18,7 +19,7 @@ $navbar-height: 50px;
 $navbar-vertical-padding: 10px;
 $navbar-horizontal-padding: 20px;
 $navbar-border-bottom-width: 1px;
-$navbar-border-bottom-color: $gray-lighter;
+$navbar-border-bottom-color: $blue;
 
 /* -------------------------------------
  * Navbar button
@@ -47,7 +48,6 @@ $navbar-profile-border-width: 2px;
 .navbar-wagon {
   max-width: 900px;
   margin: 0px auto;
-  // background: $navbar-bg;
   font-family: $navbar-font-family;
   border: none;
   font-size: $navbar-font-size;
@@ -56,9 +56,20 @@ $navbar-profile-border-width: 2px;
   letter-spacing: $navbar-letter-spacing;
   padding-left: $navbar-horizontal-padding;
   padding-right: $navbar-horizontal-padding;
-  // border-bottom: $navbar-border-bottom-width solid $navbar-border-bottom-color;
+  border-bottom: $navbar-border-bottom-width solid $navbar-border-bottom-color;
+  border-radius: 0;
   min-height: 0;
   transition: background 0.4s ease;
+
+  .navbar-toggle {
+    border-color: $blue;
+    border-radius: 4px;
+    width: 45px;
+    background: transparent;
+    .icon-bar {
+      background-color: $blue-dark;
+    }
+  }
 
   .navbar-nav > li > a,
   .navbar-nav > .open > a,
@@ -116,12 +127,6 @@ $navbar-profile-border-width: 2px;
     border-radius: $navbar-profile-radius;
   }
 
-  .navbar-toggle {
-    border-color: #dddddd;
-    width: 45px;
-    background: transparent;
-  }
-
   .navbar-nav > li > .dropdown-menu{
     border-radius: 0;
     margin-top: 10px;
@@ -150,6 +155,9 @@ $navbar-profile-border-width: 2px;
 
 @media screen and (max-width: 768px) {
   .navbar-wagon {
+    .navbar-collapse {
+      border-top: 1px solid $blue;
+    }
     .navbar-brand img, .navbar-brand svg {
       height: 50px;
     }
