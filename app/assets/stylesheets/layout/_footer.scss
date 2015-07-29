@@ -1,1 +1,15 @@
 // Your footer style
+
+footer {
+  background: linear-gradient($blue-light, $tropical-blue);
+}
+
+#footer {
+  border-top: solid 1px $blue;
+  // padding-bottom: $vertical-spacing * 2;
+}
+
+.foot-list {
+  list-style-type: none;
+  margin-bottom: $vertical-spacing;
+}

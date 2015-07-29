@@ -18,7 +18,7 @@ section id="intro"
 section id="mission"
   h2 Our Mission
 
-  p We want to increase work satisfaction and productivity for the companies of tomorrow and their employees.
+  p We want to increase work satisfaction and productivity for companies and their employees.
 
   p Currently an early-stage startup, we’re looking to get in touch with people working for companies with a progressive approach to management and organization.
 
@@ -32,13 +32,13 @@ section id="about-us"
         = image_tag "nico.jpg", size: "100", class: "img-circle"
       div class="name"
         h4 Nicolas
-        p Chief <br> 😎
+        p 😎
     li
       div class="pic"
         = image_tag "willem.jpg", size: "100", class: "img-circle"
       div class="name"
         h4 Willem
-        p Chief Yolo <br> 😇 🍪 🍻 🎨 🚁 🇺🇸 🇫🇷
+        p 😇 🍪 🍻 🎨 🚁 🇺🇸 🇫🇷
 
   p Half a Viking, half a Yankee and a full Frenchman between the both of us, we used to work in different corporate groups until we got enough of the old ways.
 
@@ -50,11 +50,11 @@ section id="contact-us"
 
   = form_for @contact, method: :post, html: { class: "form-horizontal" } do |f|
     div class="form-group"
-      = f.label :name, class: "col-sm-2 control-label"
+      = f.label :name, "Your name", class: "col-sm-2 control-label"
       div class="col-sm-offset-1 col-sm-8"
-        = f.text_field :name, class: "input-lg form-control", placeholder: "Name and Position"
+        = f.text_field :name, class: "input-lg form-control", placeholder: "Name, Position, Company"
     div class="form-group"
-      = f.label :info, class: "col-sm-2 control-label"
+      = f.label :info, "Your contact", class: "col-sm-2 control-label"
       div class="col-sm-offset-1 col-sm-8"
         = f.text_field :info, class: "input-lg form-control", placeholder: "Email or Phone"
     div class="form-group"
